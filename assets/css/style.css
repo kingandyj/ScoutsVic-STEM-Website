@@ -1,0 +1,84 @@
+:root {
+    --joeys: rgb(182, 85, 24);
+    --cubs: rgb(255, 200, 46);
+    --scouts: rgb(0, 174, 66);
+    --venturers: rgb(158, 27, 50);
+    --rovers: rgb(220, 41, 30);
+    --sa-purple: rgb(38, 38, 97);
+    --sa-navy-blue: rgb(38, 38, 97);
+    --sa-medium-blue: rgb(61, 92, 146);
+    --sa-dark-blue: rgb(26, 65, 111);
+    --grey: rgb(33, 47, 61);
+
+}
+
+.nav-link:hover {
+    font-weight: 800;
+}
+
+/* Sticky footer styles
+https://getbootstrap.com/docs/4.0/examples/sticky-footer/ and modified
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+   /* margin-bottom: 100px; */
+   background-color: var(--sa-medium-blue);
+   font-family: Nunito, sans-serif;
+}
+
+.footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    background-color: var(--grey);
+    color: #fff;
+    font-weight: 500;
+}
+
+.feature-img {
+    width: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* --- */
+
+header {
+    padding: 25px;
+    background-color: var(--sa-purple);
+}
+
+.header-grey {
+    padding: 25px;
+    background-color: var(--grey);
+}
+
+hr {
+    border-top: 2px solid #262661;
+}
+
+.navbar {
+    background: #164774;
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+}
+
+button.navbar-toggler {
+    color: #ffffff;
+}
+
+.bg-opaque-08 {
+    background:rgba(255,255,255,0.8);
+}
+
+.bg-opaque-10 {
+    background:rgba(255,255,255,1.0);
+}
+
+ul.dropdown-menu {
+    background-color: #164774;
+}

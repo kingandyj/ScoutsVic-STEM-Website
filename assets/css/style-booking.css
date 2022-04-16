@@ -1,0 +1,136 @@
+:root {
+    --joeys: rgb(182, 85, 24);
+    --cubs: rgb(255, 200, 46);
+    --scouts: rgb(0, 174, 66);
+    --venturers: rgb(158, 27, 50);
+    --rovers: rgb(220, 41, 30);
+    --sa-purple: rgb(38, 38, 97);
+    --sa-navy-blue: rgb(38, 38, 97);
+    --sa-medium-blue: rgb(61, 92, 146);
+    --sa-dark-blue: rgb(26, 65, 111);
+    --grey: rgb(33, 47, 61);
+
+}
+
+.nav-link:hover {
+    font-weight: 800;
+}
+
+/* Sticky footer styles
+https://getbootstrap.com/docs/4.0/examples/sticky-footer/ and modified
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url(../images/Gumtree-Background-1920.png);
+    background-color: var(--sa-dark-blue);
+    font-family: Nunito, sans-serif;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: var(--grey);
+    color: #fff;
+    font-weight: 500;
+}
+
+.feature-img {
+    width: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-container {
+    height: 100vh;
+    min-height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* --- */
+
+header {
+    padding: 25px;
+    background-color: var(--grey);
+}
+
+hr {
+    border-top: 2px solid #262661;
+}
+
+.navbar {
+    background: #164774;
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+}
+
+button.navbar-toggler {
+    color: #ffffff;
+}
+
+.bg-opaque-08 {
+    background:rgba(255,255,255,0.8);
+}
+
+.bg-opaque-10 {
+    background:rgba(255,255,255,1.0);
+}
+
+ul.dropdown-menu {
+    background-color: #164774;
+}
+
+
+@media only screen and (max-width: 800px) {
+    /* Force table to not be like tables anymore */
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr {
+    display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    }
+
+    #no-more-tables tr { border: 1px solid #ccc; }
+
+    #no-more-tables td {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align:left;
+    }
+
+    #no-more-tables td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align:left;
+    font-weight: bold;
+    }
+
+    /*
+    Label the data
+    */
+    #no-more-tables td:before { content: attr(data-title); }
+    }
